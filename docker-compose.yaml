@@ -1,0 +1,9 @@
+services:
+  pyspark:
+    image: apache/spark-py
+    container_name: pyspark
+    command: /opt/spark/bin/pyspark
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./work:/opt/spark/work-dir
